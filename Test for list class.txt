@@ -1,0 +1,39 @@
+//list.c test - Connor Haines
+int main() {
+    mem_ini(200);
+    List testList = list_ini();
+
+    list_add(testList, 4, 8);
+    list_add(testList, 20, 15);
+    list_add(testList, 56, 8);
+    list_add(testList, 7, 10);
+    list_add(testList, 100, 34);
+    list_add(testList, 6, 4678);
+
+    printf("\nTest 1 (Adding)\n");
+    printf("Key:\tData:\n");
+    list_print(testList);
+
+    printf("\nTest 2 (Delete Middle) - Deleting Key 20\n");
+    list_delete(testList, 20);
+    printf("Key:\tData:\n");
+    list_print(testList);
+
+    printf("\nTest 3 (Delete Last) - Deleting Key 4\n");
+    list_delete(testList, 4);
+    printf("Key:\tData:\n");
+    list_print(testList);
+
+    printf("\nTest 4 (Delete First) - Deleting Key 6\n");
+    list_delete(testList, 6);
+    printf("Key:\tData:\n");
+    list_print(testList);
+
+    printf("\nTest 5 (Delete First) - Deleting Key 100\n");
+    list_delete(testList, 100);
+    printf("Key:\tData:\n");
+    list_print(testList);
+
+    mem_free();
+    printf("List.c Test By Connor Haines.");
+}

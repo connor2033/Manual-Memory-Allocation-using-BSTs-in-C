@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include "bst.h"
+#include <string.h>
+#include <stdlib.h>
+
+int main(){
+    BStree bst;
+    bst = bstree_ini(15);
+
+    bstree_insert(bst, 7, 2);
+    bstree_insert(bst, 4, 3);
+    bstree_insert(bst, 11, 12);
+    bstree_insert(bst, 2, 1);
+    bstree_insert(bst, 6, 9);
+    bstree_insert(bst, 9, 5);
+    bstree_insert(bst, 8, 7);
+    bstree_insert(bst, 5, 4);
+
+    //bstree_traversal(bst);
+    int copyRight = 0;
+
+    /**
+     * Test bstree_search
+     **/
+    //Test 1: search for items not in BST
+    printf("\nTest bstree_search\n");
+    if(bstree_search(bst, 18)==NULL && bstree_search(bst, 23)==NULL){
+        printf("Test 1 passed\n");
+        copyRight++;
+    }else printf("Test 1 failed\n");
+    
+    //Test 2: search for items in BST
+    if(*bstree_search(bst, 7)==2 && *bstree_search(bst, 6)==9 && *bstree_search(bst, 8)==7 && *bstree_search(bst, 11)==12){
+        printf("Test 2 Passed\n");
+    }else printf("Test 2 failed\n");
+
+     /**
+     * Test bstree_data_search
+     **/
+    //Test 1: search for no such nodes
+    printf("\nTest bstree_data_search\n");
+     if(bstree_data_search(bst, 19)==NULL && bstree_data_search(bst, 36)==NULL){
+        printf("Test 1 passed\n");
+    }else printf("Test 1 failed\n");
+
+    //Test 2: search for data nodes that exist in tree
+     if(*bstree_data_search(bst, 1)==2 && *bstree_data_search(bst, 7)==6){
+        printf("Test 2 passed\n");
+    }else printf("Test 2 failed\n");
+
+    //Test 3: search for data nodes that have a data value greater
+    if(*bstree_data_search(bst, 2)==4 && *bstree_data_search(bst, 10)==11){
+        printf("Test 3 passed\n");
+	printf("Copyright Tala Buwadi 2019.");
+    }else printf("Test 3 failed\n");
+}

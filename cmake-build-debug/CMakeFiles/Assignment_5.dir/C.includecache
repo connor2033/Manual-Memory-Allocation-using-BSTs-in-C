@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/bst.c
+stdio.h
+-
+stdlib.h
+-
+bst.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/bst.h
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/bst.h
+datatype.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/datatype.h
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/datatype.h
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/list.c
+stdio.h
+-
+stdlib.h
+-
+list.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/list.h
+memory.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/memory.h
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/list.h
+datatype.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/datatype.h
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/main.c
+stdio.h
+-
+memory.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/memory.h
+list.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/list.h
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/memory.c
+stdio.h
+-
+stdlib.h
+-
+memory.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/memory.h
+
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/memory.h
+bst.h
+C:/Users/Connor/Documents/School/Second Year/CS 2211/Assignments/Assignment 5/bst.h
+
